@@ -1,8 +1,8 @@
 <html>
 	<head>
 		<title> Chrome Dev Tools: Elements Panel </title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="../css/main.css">
 	</head>
 
 	<body class="container">
@@ -43,9 +43,22 @@
 			</table>
 			<input class="btn" type="button" onclick="addRowToTable()" value="add node"/>
 			<input class="btn" type="button" onclick="addAttribute()" value="add attribute"/>
-			<input class="btn" type="button" onclick="addAttribute()" value="remove node"/>
+			<input class="btn" type="button" onclick="removeRowFromTable()" value="remove node"/>
 
 			<script type="text/javascript" src="elements.js"></script>
+		</div>
+
+		<div>
+			<div class="checklist">
+				<span> Checklist </span>
+				<ul>
+					<li>Live update templates</li>
+					<li>Force element state</li>
+					<li>CSS rules and export</li>
+					<li>DOM breakpoints</li>
+					<li>Event listener details</li>
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>

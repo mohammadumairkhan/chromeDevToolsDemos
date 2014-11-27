@@ -16,3 +16,8 @@ function addAttribute(){
 	var titleElem = document.getElementsByClassName('title')[0];
 	titleElem.className += ' green';
 }
+
+function removeRowFromTable(){
+	var tableBody = document.getElementsByTagName('tbody').item();
+	tableBody.removeChild(tableBody.children[tableBody.children.length - 1]);  
+}

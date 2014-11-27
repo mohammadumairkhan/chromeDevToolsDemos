@@ -15,3 +15,11 @@
 .green {
 	color: green;
 }
+
+.checklist span {
+    font-weight: bold;
+}
+
+.checklist {
+    padding-top: 50px;
+}
