@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title> Chrome Dev Tools: Sources Panel </title>
+	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="../bower_components/animate.css/animate.min.css">
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="container">
+	<div>
+		<div class="title">
+			<form class="form-inline">
+			  <div class="form-group">
+			    <label class="sr-only" for="calcInput">Operand</label>
+			    <div class="input-group">
+			      <input type="number" class="form-control" id="calcInput" placeholder="Number">
+			    </div>
+			    <label class="sr-only" for="calcResult">Result</label>
+			    <div class="input-group">
+			    	<span id='calcResult' class="form-control"></span>
+			    </div>
+			  </div>
+			</form>
+			<button onclick="calculate('add')" class="btn btn-primary">+</button>
+			<button onclick="calculate('subtract')" class="btn btn-primary">-</button>
+			<button onclick="calculate('multiply')" class="btn btn-primary">X</button>
+			<button onclick="calculate('divide')" class="btn btn-primary">/</button>
+			<button onclick="resetResult()" class="btn btn-secondary">Reset</button>
+		</div>
+	</div>
+	<div>
+		<div class="checklist checklist-fixed-bottom">
+			<span class="bold"> Checklist </span>
+			<div class="checklistItems">
+				<div><input type="checkbox"/> <span>Panel Overview</span></div>
+				<div><input type="checkbox"/> <span>Live Edit</span></div>
+				<div><input type="checkbox"/> <span>Debugging with breakpoints</span></div>
+				<div><input type="checkbox"/> <span>Debugging minified sources</span></div>
+			</div>
+		</div>
+		</div>
+	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="maps/sources.js"></script>
+	<!-- <script type="text/javascript" src="sources.min.js"></script> -->
+</body>
+</html>

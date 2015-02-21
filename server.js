@@ -9,23 +9,10 @@ app.get('/api/time', function (req, res) {
   	});
 });
 
-app.get('/home', function(req, res){
-	res.sendFile(__dirname + '/index.html');
-});
-
-app.get('/networks', function(req, res){
-	res.sendFile(__dirname + 'Networks/index.html');
-});
-
-app.get('/elements', function(req, res){
-	res.sendFile(__dirname + 'Elements/index.html');
-});
-
 var server = app.listen(3000, function () {
-  
-  var host = server.address().address
-  var port = server.address().port
 
-  console.log('Example app listening at http://%s:%s', host, port)
+  var port = server.address().port;
+
+  console.log('Enter the Dragon !!! at http://localhost:', port);
 
 });

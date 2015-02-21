@@ -28,3 +28,8 @@
 .thing {
 	display: none;
 }
+
+.checklist-fixed-bottom{
+    position:fixed;
+    top:  400px;
+}
