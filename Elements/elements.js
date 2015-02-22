@@ -1,10 +1,10 @@
-function addRowToTable () {
-	var elm = document.createElement("tr");
+function addRowToTable (){
+	var elm = document.createElement('tr');
 	var tableBody = document.getElementsByTagName('tbody').item();
 	var record = ['Amjad', 'Amazon', 'Amoeba', 'Arm guard'];
 
-	record.forEach(function(item){
-		var td = document.createElement("td");
+	record.forEach(function (item){
+		var td = document.createElement('td');
 		td.appendChild(document.createTextNode(item));
 		elm.appendChild(td);
 	});
@@ -12,12 +12,12 @@ function addRowToTable () {
 	tableBody.appendChild(elm);
 }
 
-function addAttribute(){
+function addAttribute (){
 	var titleElem = document.getElementsByClassName('title')[0];
 	titleElem.className += ' green';
 }
 
-function removeRowFromTable(){
+function removeRowFromTable (){
 	var tableBody = document.getElementsByTagName('tbody').item();
-	tableBody.removeChild(tableBody.children[tableBody.children.length - 1]);  
+	tableBody.removeChild(tableBody.children[tableBody.children.length - 1]);
 }
