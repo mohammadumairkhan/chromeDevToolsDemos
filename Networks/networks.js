@@ -1,15 +1,22 @@
-function getTime (){
+(function (){
 
-	$('.thing').hide();
-	$('.time').html('');
+	'use strict';
 
-	$.ajax({
-		type: 'GET',
-		url: 'http://localhost:3000/api/time',
-		contentType: 'application/json'
-	}).done(function (time){
-		$('.thing').show().removeClass('bounceIn').addClass('bounceIn');
-		$('.time').html(time.time);
-	});
+	function getTime (){
+		$('.thing').hide();
+		$('.time').html('');
 
-}
+		$.ajax({
+			type: 'GET',
+			url: 'http://localhost:3000/api/time',
+			contentType: 'application/json'
+		}).done(function (time){
+			$('.thing').show().removeClass('bounceIn').addClass('bounceIn');
+			$('.time').html(time.time);
+		});
+
+	}
+
+  this.getTime = getTime;
+
+}).call(this);
