@@ -29,7 +29,7 @@
 
 	function calculate (operator){
 		var operand = getOperand();
-		calculationMethod[operator].call(this, operand);
+		calculationMethod[operator].call(null, operand);
 		renderResult();
 	}
 

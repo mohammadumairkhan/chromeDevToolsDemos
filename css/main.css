@@ -33,3 +33,7 @@
     position:fixed;
     top:  400px;
 }
+
+.navbar-brand-align{
+  padding: 8px 15px !important;
+}
