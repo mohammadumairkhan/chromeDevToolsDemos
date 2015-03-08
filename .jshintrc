@@ -21,6 +21,7 @@
   "smarttabs": true,
   "white": true,
   "globals": {
-    "$" : true
+    "$" : true,
+    "document": true
   }
 }

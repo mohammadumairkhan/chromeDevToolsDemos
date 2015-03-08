@@ -1,23 +1,33 @@
-function addRowToTable (){
-	var elm = document.createElement('tr');
-	var tableBody = document.getElementsByTagName('tbody').item();
-	var record = ['Amjad', 'Amazon', 'Amoeba', 'Arm guard'];
+(function (){
 
-	record.forEach(function (item){
-		var td = document.createElement('td');
-		td.appendChild(document.createTextNode(item));
-		elm.appendChild(td);
-	});
+  function addRowToTable (){
+    var elm = document.createElement('tr');
+    var tableBody = document.getElementsByTagName('tbody').item();
+    var record = ['Amjad', 'Amazon', 'Amoeba', 'Arm guard'];
 
-	tableBody.appendChild(elm);
-}
+    record.forEach(function (item){
+      var td = document.createElement('td');
+      td.appendChild(document.createTextNode(item));
+      elm.appendChild(td);
+    });
 
-function addAttribute (){
-	var titleElem = document.getElementsByClassName('title')[0];
-	titleElem.className += ' green';
-}
+    tableBody.appendChild(elm);
+  }
 
-function removeRowFromTable (){
-	var tableBody = document.getElementsByTagName('tbody').item();
-	tableBody.removeChild(tableBody.children[tableBody.children.length - 1]);
-}
+  function addAttribute (){
+    var titleElem = document.getElementsByClassName('title')[0];
+    titleElem.className += ' green';
+  }
+
+  function removeRowFromTable (){
+    var tableBody = document.getElementsByTagName('tbody').item();
+    if(typeof tableBody !== undefined){
+      tableBody.removeChild(tableBody.children[tableBody.children.length - 1]);
+    }
+  }
+
+  this.addRowToTable = addRowToTable;
+  this.addAttribute = addAttribute;
+  this.removeRowFromTable = removeRowFromTable;
+
+}).call(this);
