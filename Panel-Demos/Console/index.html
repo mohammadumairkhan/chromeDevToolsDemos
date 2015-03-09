@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title> Chrome Dev Tools: Networks Panel </title>
+	<title> Chrome Dev Tools: Console </title>
 	<link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="../bower_components/animate.css/animate.min.css">
 	<link rel="stylesheet" href="../css/main.css">
@@ -21,40 +21,31 @@
       <div class="collapse navbar-collapse" id="menu-collapse">
         <ul class="nav navbar-nav">
           <li><a href="/elements">Elements</a></li>
-          <li class="active"><a href="/networks">Networks</a></li>
+          <li><a href="/networks">Networks</a></li>
           <li><a href="/sources">Sources</a></li>
           <li><a href="/memory">Memory</a></li>
-          <li><a href="/console">Console</a></li>
+          <li class="active"><a href="/console">Console</a></li>
         </ul>
         <p class="navbar-text pull-right">Mohuk Labs.</p>
       </div>
     </div>
   </nav>
 <body class="container">
-	<div>
-		<div class="title">
-			<input type="button" class="btn" value="what time is it?" onclick="getTime()"/>
-			<div class="thing">
-				<img src="../images/clobberintime.jpg">
-			</div>
-			<div class="time"></div>
-		</div>
-	</div>
-	<div>
-		<div class="checklist checklist-fixed-bottom">
-			<span class="bold"> Checklist </span>
-			<div class="checklistItems">
-				<div><input type="checkbox"/> <span>Filters</span></div>
-        <div><input type="checkbox"/> <span>Advanced Filters - Status-code, method, domain etc</span></div>
-				<div><input type="checkbox"/> <span>Timeline - DOM Content loaded, load event</span></div>
-				<div><input type="checkbox"/> <span>Initiator</span></div>
-        <div><input type="checkbox"/> <span>Timeline Details<a href="https://partners.frontpointsecurity.com/#/Login?isLogout=true" target="_blank"> FrontPoint Partner Portal</a></span></div>
-        <div><input type="checkbox"/> <span>HAR Files<a href="http://ericduran.github.io/chromeHAR/"> Chrome HAR Visualizer</a> --> QA Tip !</span></div>
-			</div>
-		</div>
-		</div>
+  <input class="btn" type="button" onclick="createDetachedNodes()" value="create detached nodes"/>
+  <input class="btn" type="button" onclick="removeDetachedNodes()" value="remove detached nodes"/>
+  <div class="checklist checklist-fixed-bottom">
+    <span class="bold"> Checklist </span>
+    <div class="checklistItems">
+      <div><input type="checkbox"/> <span>Task Manager</span></div>
+      <div><input type="checkbox"/> <span>Timeline - Memory</span></div>
+      <div><input type="checkbox"/> <span>Profiling - Heap Snapshots</span></div>
+      <div><input type="checkbox"/> <span>Profiling - Object Allocation Tracker</span></div>
+      <div><input type="checkbox"/> <span>Timeline - Javascript Profiling</span></div>
+    </div>
+    </div>
+  <div id="p"></div>
 	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<script type="text/javascript" src="networks.js"></script>
+	<script type="text/javascript" src="memory.js"></script>
 </body>
 </html>
