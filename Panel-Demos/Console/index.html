@@ -31,21 +31,21 @@
     </div>
   </nav>
 <body class="container">
-  <input class="btn" type="button" onclick="createDetachedNodes()" value="create detached nodes"/>
-  <input class="btn" type="button" onclick="removeDetachedNodes()" value="remove detached nodes"/>
+  <input class="btn" type="button" onclick="consoleTableList()" value="console a table list"/>
+  <input class="btn" type="button" onclick="booYa('GI','Joe')" value="booYa">
+  <input class="btn" type="button" onclick="monitorEventsTable()" value="Monitor Events Table">
   <div class="checklist checklist-fixed-bottom">
     <span class="bold"> Checklist </span>
     <div class="checklistItems">
-      <div><input type="checkbox"/> <span>Task Manager</span></div>
-      <div><input type="checkbox"/> <span>Timeline - Memory</span></div>
-      <div><input type="checkbox"/> <span>Profiling - Heap Snapshots</span></div>
-      <div><input type="checkbox"/> <span>Profiling - Object Allocation Tracker</span></div>
-      <div><input type="checkbox"/> <span>Timeline - Javascript Profiling</span></div>
+      <div><input type="checkbox"/> <span>console.table</span></div>
+      <div><input type="checkbox"/> <span>debug function (debugFunction)</span></div>
+      <div><input type="checkbox"/> <span>monitor function (monitorFunction)</span></div>
+      <div><input type="checkbox"/> <span>monitor events</span></div>
     </div>
     </div>
   <div id="p"></div>
 	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
   <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<script type="text/javascript" src="memory.js"></script>
+	<script type="text/javascript" src="console.js"></script>
 </body>
 </html>
